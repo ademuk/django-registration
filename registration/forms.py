@@ -41,7 +41,6 @@ class RegistrationForm(UserCreationForm):
     # activation step do require it. If you need an optional email
     # field, subclass and declare the field not required.
     email = forms.EmailField(
-        help_text=_(u'email address'),
         required=True,
         validators=[
             validators.validate_confusables_email,
